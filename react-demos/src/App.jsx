@@ -6,6 +6,8 @@ import JSXRules from "./components/JSXRules"
 import Product from "./components/Product";
 import Card from "./components/Card";
 import Weather from "./components/Weather";
+import UserStatus from "./components/UserStatus";
+import "./index.css"
 function App() {
   return(
     <>
@@ -30,7 +32,10 @@ function App() {
       </Product> */}
       
       {/* <Card /> */}
-      <Weather tempareture={17} />
+      {/* <Weather tempareture={17} /> */}
+      <UserStatus />
+      <h1>seprate file for styling</h1>
+      <Button />
     </>
   )
 }
@@ -45,5 +50,10 @@ function App() {
 //   )
         
 // }
+
+const Button = () => {
+  return (<button onClick={() => console.log(Math.floor(Math.random()) * 10)
+  }></button>)
+}
 
 export default App;
