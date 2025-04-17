@@ -8,6 +8,9 @@ const Friends = () => {
     const removeOneFriend = () => {
         setFriends(friends.filter((f)=> f !== "john"))
     }
+    const updateOneFriend = () => {
+        setFriends(friends.map((f)=> f==="alex"? "alex.smith":f))
+    }
   return (
       <div>
           <ul>
@@ -18,6 +21,7 @@ const Friends = () => {
 
           <button onClick={addOneFriend}>add new friend</button>
           <button onClick={removeOneFriend}>remove one friend</button>
+          <button onClick={updateOneFriend}>ipdate one friend</button>
     </div>
   )
 }

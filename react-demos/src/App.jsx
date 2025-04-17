@@ -11,6 +11,7 @@ import "./index.css"
 import Copy from "./components/Copy";
 import { useState } from "react";
 import Friends from "./components/Friends";
+import Movie from "./components/Movie";
 
 
 function App() {
@@ -50,7 +51,8 @@ function App() {
       {/* <h1>seprate file for styling</h1> */}
       {/* <Copy /> */}
       {/* <Button /> */}
-      <Friends />
+      {/* <Friends /> */}
+      <Movie />
     </>
   )
 }
