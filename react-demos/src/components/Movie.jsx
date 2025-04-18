@@ -25,7 +25,7 @@ const Movie = () => {
     ])
 
     const handleClick = () => {
-        setMovie(movie.map(m => m===! ?))
+        setMovie(movie.map(m => m.id === 1 ? {...m, title: "blue"} : m))
     }
   return (
       <div>
@@ -34,9 +34,10 @@ const Movie = () => {
           <button onClick={handleChange}></button> */}
           <ul>{
               movie.map((m, i) => {
-                  <li key={i}>{m.title}</li>
+                  return <li key={i}>{m.title}</li>
               })
-          }</ul>
+          }
+          </ul>
           <button onClick={handleClick}>change name</button>
       </div>
   )

@@ -12,6 +12,9 @@ import Copy from "./components/Copy";
 import { useState } from "react";
 import Friends from "./components/Friends";
 import Movie from "./components/Movie";
+import CompoenentTwo from "./components/ComponentTwo";
+import ComponentOne from "./components/ComponentOne";
+import ExampleOne from "./components/ExampleOne";
 
 
 function App() {
@@ -19,6 +22,7 @@ function App() {
   // const [counter, setCounter] = useState(55)
   // const increament = () => setCounter(counter + 1)
   // const decrement = () => setCounter(counter - 1)
+  const [count, setCount] = useState(0)
   
   return(
     <>
@@ -52,7 +56,10 @@ function App() {
       {/* <Copy /> */}
       {/* <Button /> */}
       {/* <Friends /> */}
-      <Movie />
+      {/* <Movie /> */}
+      {/* <CompoenentTwo count={count} onClick={() => setCount(count + 1)} /> */}
+      {/* <ComponentOne count={count} onClick={() => setCount(count + 1)} /> */}
+      <ExampleOne />
     </>
   )
 }
