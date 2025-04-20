@@ -15,6 +15,7 @@ import Movie from "./components/Movie";
 import CompoenentTwo from "./components/ComponentTwo";
 import ComponentOne from "./components/ComponentOne";
 import ExampleOne from "./components/ExampleOne";
+import ToDoList from "./components/ToDoList";
 
 
 function App() {
@@ -59,7 +60,9 @@ function App() {
       {/* <Movie /> */}
       {/* <CompoenentTwo count={count} onClick={() => setCount(count + 1)} /> */}
       {/* <ComponentOne count={count} onClick={() => setCount(count + 1)} /> */}
-      <ExampleOne />
+      {/* <ExampleOne /> */}
+      {/* <ComponentOne /> */}
+      <ToDoList />
     </>
   )
 }
