@@ -16,6 +16,8 @@ import CompoenentTwo from "./components/ComponentTwo";
 import ComponentOne from "./components/ComponentOne";
 import ExampleOne from "./components/ExampleOne";
 import ToDoList from "./components/ToDoList";
+import Profile from "./components/Profile";
+import ShoppingList from "./components/ShoppingList";
 
 
 function App() {
@@ -62,7 +64,9 @@ function App() {
       {/* <ComponentOne count={count} onClick={() => setCount(count + 1)} /> */}
       {/* <ExampleOne /> */}
       {/* <ComponentOne /> */}
-      <ToDoList />
+      {/* <ToDoList /> */}
+      {/* <Profile /> */}
+      <ShoppingList />
     </>
   )
 }
