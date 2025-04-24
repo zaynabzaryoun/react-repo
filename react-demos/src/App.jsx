@@ -18,6 +18,10 @@ import ExampleOne from "./components/ExampleOne";
 import ToDoList from "./components/ToDoList";
 import Profile from "./components/Profile";
 import ShoppingList from "./components/ShoppingList";
+import CopyInput from "./components/CopyInput";
+import Switcher from "./components/Switcher";
+import Value from "./components/Value";
+import BasicEffect from "./components/BasicEffect";
 
 
 function App() {
@@ -66,7 +70,11 @@ function App() {
       {/* <ComponentOne /> */}
       {/* <ToDoList /> */}
       {/* <Profile /> */}
-      <ShoppingList />
+      {/* <ShoppingList /> */}
+      {/* <CopyInput /> */}
+      {/* <Switcher /> */}
+      {/* <Value/> */}
+      <BasicEffect />
     </>
   )
 }
