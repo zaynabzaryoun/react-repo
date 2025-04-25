@@ -22,14 +22,24 @@ import CopyInput from "./components/CopyInput";
 import Switcher from "./components/Switcher";
 import Value from "./components/Value";
 import BasicEffect from "./components/BasicEffect";
+import ComponentA from "./components/propsDriling/ComponentA";
+import { createContext } from "react";
+import UserProvider from "./components/UserContext";
+import UpdateUser from "./components/UpdateUser";
+import UserProfile from "./components/UserProfile";
 
 
+export const Data = createContext()
+export const Data1 = createContext()
 function App() {
   // const counter = useState(0)
   // const [counter, setCounter] = useState(55)
   // const increament = () => setCounter(counter + 1)
   // const decrement = () => setCounter(counter - 1)
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+  const name = "zay"
+  const age = 29
+
   
   return(
     <>
@@ -74,7 +84,16 @@ function App() {
       {/* <CopyInput /> */}
       {/* <Switcher /> */}
       {/* <Value/> */}
-      <BasicEffect />
+      {/* <BasicEffect /> */}
+      {/* <Data.Provider value={name} >
+        <Data1.Provider value={age}>
+          <ComponentA />
+        </Data1.Provider>
+      </Data.Provider> */}
+      <UserProvider>
+        <UserProfile />
+        <UpdateUser />
+      </UserProvider>
     </>
   )
 }

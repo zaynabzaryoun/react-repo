@@ -32,21 +32,23 @@
 import React, { useEffect, useState } from 'react'
 
 const BasicEffect = () => {
+
     const [apiData, setApiData] = useState([])
     useEffect(() => {
         async function getData() {
             const res = await fetch("https://jsonplaceholder.typicode.com/posts")
             const data = await res.json()
-            setApiData(data)
-        
-            
+            setApiData(data)  
         }
         getData()
     }, [])
+
   return (
       <div>
-          {/* <h1>the title of the first post:</h1> */}
-          <h2>{apiData[0].title}</h2>
+          <h1>the title of the first post:</h1>
+          {/* <ul>{apiData.map(e => <li key={e.id}>{e.title}</li>)}</ul> */}
+          {/* <h2>{apiData[0]?.title}</h2> */}
+          <h2>{apiData.length === 0 ? "loading..." : apiData[0].title}</h2>
     </div>
   )
 }
