@@ -27,6 +27,7 @@ import { createContext } from "react";
 import UserProvider from "./components/UserContext";
 import UpdateUser from "./components/UpdateUser";
 import UserProfile from "./components/UserProfile";
+import Counter from "./components/Counter";
 
 
 export const Data = createContext()
@@ -90,10 +91,11 @@ function App() {
           <ComponentA />
         </Data1.Provider>
       </Data.Provider> */}
-      <UserProvider>
+      {/* <UserProvider>
         <UserProfile />
         <UpdateUser />
-      </UserProvider>
+      </UserProvider> */}
+      <Counter />
     </>
   )
 }
