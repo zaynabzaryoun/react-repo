@@ -31,11 +31,24 @@
 // }
 
 
-import React, { useReducer } from 'react'
-initialState = {counter  : 0}
+import React, { useReducer, useState } from 'react'
+import { initialState, counterReducer } from './counterReducer';
+
 export default function Counter() {
-   const [state, dispatch] = useReducer(reducer, initialState)
+   
+    const [state, dispatch] = useReducer(counterReducer, initialState);
+    const [inputValue, setInputValue] = useState(0)
   return (
-      <div>Counter: {state.counter}</div>
+      <div>
+          <h1>Counter: {state.counter}</h1>
+          <button onClick={e => dispatch({ type: "increment" })}>incremnt</button>
+          <button onClick={e => dispatch({ type: "decrement" })}>decremnt</button>
+          
+
+          <input type="number" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+          <button onClick={() => {dispatch({type: "incByAmount", payload: +inputValue}); setInputValue(0)}}>add</button>
+          <button onClick={() => { dispatch({ type: "decByAmount", payload: Number(inputValue) });  setInputValue(0)}}>sub</button>
+          
+      </div>
   )
 }

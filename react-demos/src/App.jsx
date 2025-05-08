@@ -28,6 +28,8 @@ import UserProvider from "./components/UserContext";
 import UpdateUser from "./components/UpdateUser";
 import UserProfile from "./components/UserProfile";
 import Counter from "./components/Counter";
+import RefComponent from "./components/RefComponent";
+import Timer from "./components/Timer";
 
 
 export const Data = createContext()
@@ -95,7 +97,9 @@ function App() {
         <UserProfile />
         <UpdateUser />
       </UserProvider> */}
-      <Counter />
+      {/* <Counter /> */}
+      {/* <RefComponent /> */}
+      <Timer />
     </>
   )
 }
