@@ -30,6 +30,8 @@ import UserProfile from "./components/UserProfile";
 import Counter from "./components/Counter";
 import RefComponent from "./components/RefComponent";
 import Timer from "./components/Timer";
+import DateComp from "./components/DateComp";
+import UniqueId from "./components/UniqueId";
 
 
 export const Data = createContext()
@@ -99,7 +101,9 @@ function App() {
       </UserProvider> */}
       {/* <Counter /> */}
       {/* <RefComponent /> */}
-      <Timer />
+      {/* <Timer /> */}
+      {/* <DateComp /> */}
+      <UniqueId />
     </>
   )
 }
